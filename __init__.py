@@ -1,3 +1,8 @@
+try:
+    from . import prestartup_script
+except Exception as e:
+    print(f"Ошибка при выполнении prepare_environment: {e}")
+
 #from .essentials import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
 from .image import IMAGE_CLASS_MAPPINGS, IMAGE_NAME_MAPPINGS
 from .mask import MASK_CLASS_MAPPINGS, MASK_NAME_MAPPINGS
